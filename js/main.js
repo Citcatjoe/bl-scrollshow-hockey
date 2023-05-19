@@ -106,23 +106,23 @@
         swiper.slideTo(i+1);
     }).triggerHook(0.8).addTo(controller);
 
-    new ScrollMagic.Scene({triggerElement: "#trigger7"})
-    .on("enter", function (event) {
-        var i = parseInt($('#trigger7').attr('id').slice(-1));
-        swiper.slideTo(i+1);
-    }).triggerHook(0.8).addTo(controller);
+    // new ScrollMagic.Scene({triggerElement: "#trigger7"})
+    // .on("enter", function (event) {
+    //     var i = parseInt($('#trigger7').attr('id').slice(-1));
+    //     swiper.slideTo(i+1);
+    // }).triggerHook(0.8).addTo(controller);
 
-    new ScrollMagic.Scene({triggerElement: "#trigger8"})
-    .on("enter", function (event) {
-        var i = parseInt($('#trigger8').attr('id').slice(-1));
-        swiper.slideTo(i+1);
-    }).triggerHook(0.8).addTo(controller);
+    // new ScrollMagic.Scene({triggerElement: "#trigger8"})
+    // .on("enter", function (event) {
+    //     var i = parseInt($('#trigger8').attr('id').slice(-1));
+    //     swiper.slideTo(i+1);
+    // }).triggerHook(0.8).addTo(controller);
 
-    new ScrollMagic.Scene({triggerElement: "#trigger9"})
-    .on("enter", function (event) {
-        var i = parseInt($('#trigger9').attr('id').slice(-1));
-        swiper.slideTo(i+1);
-    }).triggerHook(0.8).addTo(controller);
+    // new ScrollMagic.Scene({triggerElement: "#trigger9"})
+    // .on("enter", function (event) {
+    //     var i = parseInt($('#trigger9').attr('id').slice(-1));
+    //     swiper.slideTo(i+1);
+    // }).triggerHook(0.8).addTo(controller);
 
     new ScrollMagic.Scene({triggerElement: "#trigger10"})
     .on("enter", function (event) {

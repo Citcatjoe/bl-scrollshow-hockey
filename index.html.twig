@@ -12,19 +12,22 @@
 		<link rel="stylesheet" href="css/normalize.css">
 		<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.css"/>
 		<link rel="stylesheet" href="css/main.css">
+		<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap" rel="stylesheet">
 		<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.1/jquery.min.js"></script>
 		{# <?php include 'hb_card_tp.php'; ?> #}
 		{{ block('head_brand') }}
 	</head>
  
 	<body>
-		{{ block('gtm') }} 
+		{{ block('gtm') }}
 		{{ block('header') }}      
 		<!-- IMAGES ONLY HERE -->
 		<div class="swiper scene fixed w-full bg-center bg-cover"> 
 			<div class="swiper-wrapper">
 				<!-- Slides -->
-				<div id="swiper-slide-00" class="swiper-slide bg-cover relative"><div class="gradient absolute w-full h-full md:h-1/2 bottom-0"></div><p style="font-size:96px; color:red;">{%if debugSlider %}0{%endif%}</p></div>
+				<div id="swiper-slide-00" class="swiper-slide bg-cover relative"><div class="gradientleft absolute w-full h-full md:h-full bottom-0"></div><p style="font-size:96px; color:red;">{%if debugSlider %}0{%endif%}</p></div>
 				<div id="swiper-slide-01" class="swiper-slide bg-center bg-cover relative"><div class="gradient absolute w-full h-full md:h-1/2 bottom-0"></div><p style="font-size:96px; color:red;">{%if debugSlider %}1{%endif%}</p></div>
 				<div id="swiper-slide-02" class="swiper-slide bg-cover relative"><div class="gradient absolute w-full h-2/3 md:h-1/2 bottom-0"></div><p style="font-size:96px; color:red;">{%if debugSlider %}2{%endif%}</p></div>
 				<div id="swiper-slide-03" class="swiper-slide bg-cover relative"><div class="gradient absolute w-full h-2/3 md:h-1/2 bottom-0"></div><p style="font-size:96px; color:red;">{%if debugSlider %}3{%endif%}</p></div>
@@ -33,7 +36,7 @@
 				<div id="swiper-slide-06" class="swiper-slide bg-cover relative"><div class="gradient absolute w-full h-2/3 md:h-1/2 bottom-0"></div><p style="font-size:96px; color:red;">{%if debugSlider %}5{%endif%}</p></div>
 				<div id="swiper-slide-07" class="swiper-slide bg-cover relative"><div class="gradient absolute w-full h-2/3 md:h-1/2 bottom-0"></div><p style="font-size:96px; color:red;">{%if debugSlider %}5{%endif%}</p></div>
 				<div id="swiper-slide-08" class="swiper-slide bg-cover relative"><div class="gradient absolute w-full h-2/3 md:h-1/2 bottom-0"></div><p style="font-size:96px; color:red;">{%if debugSlider %}5{%endif%}</p></div>
-				<div id="swiper-slide-09" class="swiper-slide bg-cover relative"><div class="gradient absolute w-full h-2/3 md:h-1/2 bottom-0"></div><p style="font-size:96px; color:red;">{%if debugSlider %}5{%endif%}</p></div>
+				{# <div id="swiper-slide-09" class="swiper-slide bg-cover relative"><div class="gradient absolute w-full h-2/3 md:h-1/2 bottom-0"></div><p style="font-size:96px; color:red;">{%if debugSlider %}5{%endif%}</p></div> #}
 				<div id="swiper-slide-10" class="swiper-slide bg-cover relative"><div class="gradient absolute w-full h-2/3 md:h-1/2 bottom-0"></div><p style="font-size:96px; color:red;">{%if debugSlider %}5{%endif%}</p></div>
 				<div id="swiper-slide-11" class="swiper-slide bg-center bg-cover relative" style="background:#202124;"><div class="gradient absolute w-full h-1/2 bottom-0"></div><h1 style="font-size:96px; color:red;">{%if debugSlider %}footer{%endif%}</h1></div>
 			</div>
@@ -52,10 +55,10 @@
 			
 
 			<section class="section0 container intro py-8 mb-96 max-w-6xl bg-transparent overflow-auto relative">
-				<div class="text-center md:text-left container textbox w-full md:w-1/2 absolute md:bottom-1/2 md:translate-y-2/4 bottom-4 translate-y-0">
-					<h1 class="text-white text-3xl md:text-6xl mb-3 md:mb-6">Qui sont les skieurs suisses qui ramèneront une médaille?</h1>
+				<div class="text-center md:text-left container textbox w-full md:w-1/2 absolute md:bottom-1/2 md:bottom-16 bottom-4 translate-y-0">
+					<h1 class="text-white text-3xl md:text-6xl mb-3 md:mb-6 drop-shadow-md">Qui sont les stars de NHL à renforcer l’équipe de Suisse?</h1>
 					<!-- <p class="font-light text-white text-lg md:text-xl opacity-80">Demandez le programme! Voici ce qui attend nos stars</p> -->
-					<p class="text-white text-l md:text-xl  mb-2 md:mb-4 opacity-70">Dès ce lundi 6 février, les stations de Courchevel et Méribel accueillent les Championnats du monde de ski alpin. Cette 47e édition devrait sourire aux Suisses, dont la délégation sera emmenée par Lara Gut-Behrami et Marco Odermatt. Découvrez les chances de médaille pour chaque athlète et chaque course.
+					<p class="text-white text-l md:text-xl  mb-2 md:mb-4 opacity-70 drop-shadow-md">Cette année, six joueurs du plus prestigieux championnat du monde sont venus renforcer l’équipe de Suisse lors du Mondial de Riga.
 					</p>
 					{{ block('scroller') }}
 				</div> 
@@ -64,79 +67,74 @@
 			
 			<section class="section1 container py-8 max-w-6xl overflow-auto relative">
 				<div class="textbox w-full md:w-1/2 p-0 md:p-4">
-					<p class="font-bold md:text-left text-2xl md:text-5xl text-white">Marco Odermatt</p>
-					<div class="grid grid-cols-1 py-4">
-						<span class="block text-white opacity-70 font-bold underline underline-offset-1 mb-2">Chance de médaille</span>
-						<span class="text-white block overflow-auto">
-							<span class="float-left mr-2 opacity-70">Combiné alpin le 7 février</span>
-							<img src="img/star1.svg" alt="Icône 1 étoile1" class="translate-y-1.5">
-						</span>
-						<span class="text-white block overflow-auto">
-							<span class="float-left mr-2 opacity-70">Super-G le 9 février</span>
-							<img src="img/star5.svg" alt="Icône 5 étoiles" class="translate-y-1.5">
-						</span>
-						<span class="text-white block overflow-auto">
-							<span class="float-left mr-2 opacity-70">Descente le 12 février</span>
-							<img src="img/star4.svg" alt="Icône 4 étoiles" class="translate-y-1.5">
-						</span>
-						<span class="text-white block overflow-auto">
-							<span class="float-left mr-2 opacity-70">Géant le 17 février</span>
-							<img src="img/star5.svg" alt="Icône 5 étoiles" class="translate-y-1.5">
+					<p class="font-bold md:text-left text-2xl md:text-5xl text-white mb-4">Kevin Fiala</p>
+					<div class="grid grid-cols-1 px-2 py-4">
+						<span class="">
+							<img src="img/this/logo-la-kings.svg" alt="logo Los Angeles Kings" class="h-24 float-left -ml-4">
+							<span class="text-white opacity-70 text-md leading-0.5 block">Ailier des Los Angeles Kings comptabilisant 488 matches de NHL. Drafté en 2014 par les Nashville Predators (1er tour, 11e position)</span>
 						</span>
 					</div>
-					<p class="text-white text-l md:text-xl mb-4">Marco Odermatt survole cette saison. Sa blessure à un genou n’est plus qu’un mauvais souvenir. Le&nbsp;Nidwaldien de 25 ans peut viser trois titres mondiaux. Il pourrait même se lancer dans le combiné alpin. En Savoie, le nouveau roi du ski cherchera aussi à faire oublier ses premiers Championnats du monde ratés, en 2021 à Cortina (It).</p>
+					<div class="grid grid-cols-1 px-2 py-4 mb-4">
+						<span class="block text-white opacity-70 font-bold underline underline-offset-1 mb-2">Statistiques de la saison 2022/2023</span>
+						<div class="flex text-white opacity-70">
+							<span class="w-1/4 text-center font-thin"><span class="sport text-4xl">69</span><br>matches</span>
+							<span class="w-1/4 text-center font-thin"><span class="sport text-4xl">23</span><br>buts</span>
+							<span class="w-1/4 text-center font-thin"><span class="sport text-4xl">49</span><br>assists</span>
+							<span class="w-1/4 text-center font-thin"><span class="sport text-4xl">72</span><br>points</span>
+						</div>
+					</div>
+					<p class="text-white text-l md:text-xl mb-4">En 2014, Kevin Fiala est devenu le troisième joueur de l’histoire à disputer les Mondiaux M18, M20 et senior la même année. Après un début de carrière difficile, il a explosé en 2019 à Minnesota. En 2022, il a signé un contrat de sept ans avec les Los Angeles Kings pour 55,125 millions de dollars.<br><br>
+						Ses deux parents sont tchèques. Son père, Jan, a été l’un de ses premiers entraîneurs. Il le faisait jouer contre des enfants de 15 ans alors que Kevin n’en avait que 11. Jan Fiala a porté les couleurs du HC Ajoie durant une saison de LNB, au début des années 90. Polyglotte, il parle cinq langues: allemand, anglais, suédois, tchèque et français.</p>
 					<!-- <p class="text-white text-xs opacity-70">Legende de la photo/crédit</p> -->
 				</div>
 				<div id="trigger1" class="trigger absolute top-8 w-full h-1"></div>
 			</section>      
 			
 			<section class="section2 container py-8 max-w-6xl overflow-auto relative">
-				<div class="textbox w-full md:w-1/2 p-0 md:p-4">
-					<p class="font-bold md:text-left text-2xl md:text-5xl text-white">Lara Gut-Behrami</p>
-					<div class="grid grid-cols-1 py-4">
-						<span class="block text-white opacity-70 font-bold underline underline-offset-1 mb-2">Chance de médaille</span>
-						<span class="text-white block overflow-auto">
-							<span class="float-left mr-2 opacity-70">Super-G le 8 février</span>
-							<img src="img/star4.svg" alt="Icône 5 étoiles" class="translate-y-1.5">
-						</span>
-						<span class="text-white block overflow-auto">
-							<span class="float-left mr-2 opacity-70">Descente le 11 février</span>
-							<img src="img/star5.svg" alt="Icône 4 étoiles" class="translate-y-1.5">
-						</span>
-						<span class="text-white block overflow-auto">
-							<span class="float-left mr-2 opacity-70">Géant le 16 février</span>
-							<img src="img/star5.svg" alt="Icône 5 étoiles" class="translate-y-1.5">
+				<div class="textbox w-full md:w-1/2 p-0 md:p-4 float-right">
+					<p class="font-bold md:text-left text-2xl md:text-5xl text-white mb-4">Nino Niederreiter</p>
+					<div class="grid grid-cols-1 px-2 py-4">
+						<span class="">
+							<img src="img/this/logo-winnipeg-jets.svg" alt="logo Los Angeles Kings" class="h-24 float-left mr-4">
+							<span class="text-white opacity-70 text-md leading-0.5 block">Ailier des Winnipeg Jets comptabilisant 810 matches de NHL. Drafté en 2010 par les New York Islanders (1er tour, 5e position)</span>
 						</span>
 					</div>
-					<p class="text-white text-l md:text-xl mb-4">Lara Gut-Behrami doit défendre deux titres de championne du monde, en géant et en super-G. Toujours dans le coup cette saison, la Tessinoise sera difficile à battre. La skieuse de 31 ans peut viser trois médailles. Elle en compte déjà huit dans son riche palmarès.</p>
+					<div class="grid grid-cols-1 px-2 py-4 mb-4">
+						<span class="block text-white opacity-70 font-bold underline underline-offset-1 mb-2">Statistiques de la saison 2022/2023</span>
+						<div class="flex text-white opacity-70">
+							<span class="w-1/4 text-center font-thin"><span class="sport text-4xl">78</span><br>matches</span>
+							<span class="w-1/4 text-center font-thin"><span class="sport text-4xl">24</span><br>buts</span>
+							<span class="w-1/4 text-center font-thin"><span class="sport text-4xl">17</span><br>assists</span>
+							<span class="w-1/4 text-center font-thin"><span class="sport text-4xl">41</span><br>points</span>
+						</div>
+					</div>
+					<p class="text-white text-l md:text-xl mb-4">Avec Roman Josi, Raphael Diaz, Reto Berra et Simon Moser, il est l’un des rares joueurs à avoir remporté les deux médailles d’argent au Championnat du monde. Nino Niederreiter dispute déjà son septième Mondial et a été nommé capitaine de l’équipe de Suisse cette saison.<br><br>
+						Le solide ailier avait commencé un apprentissage de monteur en chauffage. Lors du troisième jour de cours, il annonce à ses professeurs qu’il ne reviendra pas et qu’il veut se concentrer sur sa carrière de hockeyeur. Son succès ne l’a pas coupé de ses racines puisqu’en 2021 il est devenu membre du conseil d’administration du HC Coire, son club formateur.</p>
 					<!-- <p class="text-white text-xs opacity-70">Legende de la photo/crédit</p> -->
 				</div>
 				<div id="trigger2" class="trigger absolute top-8 w-full h-1"></div>
 			</section> 
 		
 			<section class="section3 container py-8 max-w-6xl overflow-auto relative">
-				<div class="textbox w-full md:w-1/2 p-0 md:p-4 float-right">
-					<p class="font-bold md:text-left text-2xl md:text-5xl text-white">Wendy Holdener</p>
-					<div class="grid grid-cols-1 py-4">
-						<span class="block text-white opacity-70 font-bold underline underline-offset-1 mb-2">Chance de médaille</span>
-						<span class="text-white block overflow-auto">
-							<span class="float-left mr-2 opacity-70">Combiné alpin le 6 février</span>
-							<img src="img/star5.svg" alt="Icône 5 étoiles" class="translate-y-1.5">
-						</span>
-						<span class="text-white block overflow-auto">
-							<span class="float-left mr-2 opacity-70">Parallèle le 15 février</span>
-							<img src="img/star3.svg" alt="Icône 5 étoiles" class="translate-y-1.5">
-						</span>
-						<span class="text-white block overflow-auto">
-							<span class="float-left mr-2 opacity-70">Géant le 16 février</span>
-							<img src="img/star3.svg" alt="Icône 5 étoiles" class="translate-y-1.5">
-						</span>
-						<span class="text-white block overflow-auto">
-							<span class="float-left mr-2 opacity-70">Slalom le 18 février</span>
-							<img src="img/star5.svg" alt="Icône 5 étoiles" class="translate-y-1.5">
+				<div class="textbox w-full md:w-1/2 p-0 md:p-4">
+					<p class="font-bold md:text-left text-2xl md:text-5xl text-white mb-4">Jonas Siegenthaler</p>
+					<div class="grid grid-cols-1 px-2 py-4">
+						<span class="">
+							<img src="img/this/logo-newjersey-devils.svg" alt="logo Los Angeles Kings" class="h-24 float-left mr-4">
+							<span class="text-white opacity-70 text-md leading-0.5 block">Défenseur des New Jersey Devils comptabilisant 255 matches de NHL. Drafté par les Washington Capitals (2e tour, 57e position)</span>
 						</span>
 					</div>
-					<p class="text-white text-l md:text-xl mb-4">Wendy Holdener va-t-elle lancer la récolte suisse dès la première course? La double championne du monde de la discipline sera l’une des favorites du combiné alpin ce lundi 6 février. La Schwytzoise est entrée dans une autre dimension cette saison en fêtant ses deux premiers succès en slalom. Elle sera aussi candidate à l'or entre les piquets, à condition que Mikaela Shiffrin se rate.
+					<div class="grid grid-cols-1 px-2 py-4 mb-4">
+						<span class="block text-white opacity-70 font-bold underline underline-offset-1 mb-2">Statistiques de la saison 2022/2023</span>
+						<div class="flex text-white opacity-70">
+							<span class="w-1/4 text-center font-thin"><span class="sport text-4xl">80</span><br>matches</span>
+							<span class="w-1/4 text-center font-thin"><span class="sport text-4xl">4</span><br>buts</span>
+							<span class="w-1/4 text-center font-thin"><span class="sport text-4xl">17</span><br>assists</span>
+							<span class="w-1/4 text-center font-thin"><span class="sport text-4xl">21</span><br>points</span>
+						</div>
+					</div>
+					<p class="text-white text-l md:text-xl mb-4">Le père du solide Zurichois est suisse, tandis que sa mère est thaïlandaise. Il est le premier joueur ayant des racines de ce pays à évoluer en NHL. «C’est une grande fierté, avait-il déclaré au moment de son arrivée en Amérique du Nord. C’est un si beau pays. Je m’y rends une fois par année si j’y arrive. J’ai beaucoup d’amis là-bas.»<br><br>
+						Arrière robuste (189cm, 99 kilos), Jonas Siegenthaler va disputer son troisième Championnat du monde avec l’équipe de Suisse. Le 26 juillet 2022, il a signé un contrat de cinq ans avec les New Jersey Devils pour un total de 17 millions de dollars.
 					</p>
 					<!-- <p class="text-white text-xs opacity-70">Legende de la photo/crédit</p> -->
 				</div>
@@ -144,32 +142,25 @@
 			</section> 
 			
 			<section class="section4 container py-8 max-w-6xl overflow-auto relative">
-				<div class="textbox w-full md:w-1/2 p-0 md:p-4">
-					<p class="font-bold md:text-left text-2xl md:text-5xl text-white">Loïc Meillard</p>
-					<div class="grid grid-cols-1 py-4">
-						<span class="block text-white opacity-70 font-bold underline underline-offset-1 mb-2">Chance de médaille</span>
-						<span class="text-white block overflow-auto">
-							<span class="float-left mr-2 opacity-70">Combiné alpin le 7 février</span>
-							<img src="img/star5.svg" alt="Icône 5 étoiles" class="translate-y-1.5">
-						</span>
-						<span class="text-white block overflow-auto">
-							<span class="float-left mr-2 opacity-70">Super-G le 9 février</span>
-							<img src="img/star2.svg" alt="Icône 5 étoiles" class="translate-y-1.5">
-						</span>
-						<span class="text-white block overflow-auto">
-							<span class="float-left mr-2 opacity-70">Parallèle le 15 février</span>
-							<img src="img/star3.svg" alt="Icône 5 étoiles" class="translate-y-1.5">
-						</span>
-						<span class="text-white block overflow-auto">
-							<span class="float-left mr-2 opacity-70">Géant le 17 février</span>
-							<img src="img/star5.svg" alt="Icône 5 étoiles" class="translate-y-1.5">
-						</span>
-						<span class="text-white block overflow-auto">
-							<span class="float-left mr-2 opacity-70">Slalom le 19 février</span>
-							<img src="img/star4.svg" alt="Icône 5 étoiles" class="translate-y-1.5">
+				<div class="textbox w-full md:w-1/2 p-0 md:p-4 float-right">
+					<p class="font-bold md:text-left text-2xl md:text-5xl text-white mb-4">Nico Hischier</p>
+					<div class="grid grid-cols-1 px-2 py-4">
+						<span class="">
+							<img src="img/this/logo-newjersey-devils.svg" alt="logo Los Angeles Kings" class="h-24 float-left mr-4">
+							<span class="text-white opacity-70 text-md leading-0.5 block">Centre des New Jersey Devils comptabilisant 381 matches de NHL. Drafté en 2017 par les New Jersey Devils (1er tour, 1re position)</span>
 						</span>
 					</div>
-					<p class="text-white text-l md:text-xl mb-4">Le Romand a débloqué son compteur en Coupe du monde de géant dans la nuit de Schladming (Aut). Un&nbsp;succès qui fait du skieur d’Hérémence un concurrent de Marco Odermatt pour le titre mondial. Il&nbsp;ne faut pas non plus oublier Gino Caviezel, qui est aussi monté sur le podium en Autriche. En combiné, Loïc Meillard aura une chance dès le début de la compétition. Il avait obtenu le bronze aux Mondiaux de Cortina en 2021. Un métal aussi remporté lors du décrié géant parallèle.
+					<div class="grid grid-cols-1 px-2 py-4 mb-4">
+						<span class="block text-white opacity-70 font-bold underline underline-offset-1 mb-2">Statistiques de la saison 2022/2023</span>
+						<div class="flex text-white opacity-70">
+							<span class="w-1/4 text-center font-thin"><span class="sport text-4xl">81</span><br>matches</span>
+							<span class="w-1/4 text-center font-thin"><span class="sport text-4xl">31</span><br>buts</span>
+							<span class="w-1/4 text-center font-thin"><span class="sport text-4xl">49</span><br>assists</span>
+							<span class="w-1/4 text-center font-thin"><span class="sport text-4xl">80</span><br>points</span>
+						</div>
+					</div>
+					<p class="text-white text-l md:text-xl mb-4">Malgré ses 24 ans, le Haut-Valaisan dispute déjà son quatrième Championnat du monde. Fan de Manchester City, Nico Hischier vient d’une famille de sportifs. Son père, Rino, était un joueur du FC Naters. Il a lui-même joué au foot jusqu’à 12 ans. Son frère Luca évolue au HC Bienne. Sa soeur, Nina, est une volleyeuse d’un bon niveau.<br><br>
+						En 2022, il a signé un contrat de sept ans pour 50,75 millions de dollars avec la franchise du New Jersey. Lors du Mondial 2022, il était capitaine de la sélection nationale, un rôle qu’il a depuis 2020 en NHL.
 					</p>
 					<!-- <p class="text-white text-xs opacity-70">Legende de la photo/crédit</p> -->
 				</div>
@@ -177,20 +168,25 @@
 			</section> 
 
 			<section class="section5 container py-8 max-w-6xl overflow-auto relative">
-				<div class="textbox w-full md:w-1/2 p-0 md:p-4 float-right">
-					<p class="font-bold md:text-left text-2xl md:text-5xl text-white">Corinne Suter</p>
-					<div class="grid grid-cols-1 py-4">
-						<span class="block text-white opacity-70 font-bold underline underline-offset-1 mb-2">Chance de médaille</span>
-						<span class="text-white block overflow-auto">
-							<span class="float-left mr-2 opacity-70">Super-G le 8 février</span>
-							<img src="img/star4.svg" alt="Icône 5 étoiles" class="translate-y-1.5">
-						</span>
-						<span class="text-white block overflow-auto">
-							<span class="float-left mr-2 opacity-70">Descente le 11 février</span>
-							<img src="img/star5.svg" alt="Icône 5 étoiles" class="translate-y-1.5">
+				<div class="textbox w-full md:w-1/2 p-0 md:p-4">
+					<p class="font-bold md:text-left text-2xl md:text-5xl text-white mb-4">Denis Malgin</p>
+					<div class="grid grid-cols-1 px-2 py-4">
+						<span class="">
+							<img src="img/this/logo-colorado-avalanche.svg" alt="logo Los Angeles Kings" class="h-24 float-left mr-4">
+							<span class="text-white opacity-70 text-md leading-0.5 block">Ailier/centre de Colorado Avalanche comptabilisant 257 matches de NHL. Drafté en 2015 par les Florida Panthers (4e tour, 102e position)</span>
 						</span>
 					</div>
-					<p class="text-white text-l md:text-xl mb-4">C’est simple, Corinne Suter est tenante du titre de l’épreuve reine, la descente, aussi bien aux Jeux olympiques qu’aux Championnats du monde. La&nbsp;spécialiste de vitesse se sublime lors des grands rendez-vous. Dans les Dolomites, elle avait encore pris l’argent en super-G, complétant un doublé suisse derrière Lara Gut-Behrami. La Schwytzoise s’est fait peur en tombant la semaine dernière à Cortina, mais elle devrait être d’attaque.
+					<div class="grid grid-cols-1 px-2 py-4 mb-4">
+						<span class="block text-white opacity-70 font-bold underline underline-offset-1 mb-2">Statistiques de la saison 2022/2023</span>
+						<div class="flex text-white opacity-70">
+							<span class="w-1/4 text-center font-thin"><span class="sport text-4xl">65</span><br>matches</span>
+							<span class="w-1/4 text-center font-thin"><span class="sport text-4xl">13</span><br>buts</span>
+							<span class="w-1/4 text-center font-thin"><span class="sport text-4xl">8</span><br>assists</span>
+							<span class="w-1/4 text-center font-thin"><span class="sport text-4xl">21</span><br>points</span>
+						</div>
+					</div>
+					<p class="text-white text-l md:text-xl mb-4">Il a fait ses débuts dans le mouvement junior de Bienne lorsque son père, Albert, était assistant coach de la première équipe. Avec lui, il a appris le russe et rentrait chaque année à Perm, en Russie. Albert Malgin a longtemps entraîné le HC Martigny. Son frère, Dmitri, est un ancien junior de Fribourg Gottéron.<br><br>
+						Le contrat de Denis Malgin dans le Colorado s’est terminé à la fin de la saison 2022-2023. S’il y a de fortes chances qu’il reste en Amérique du Nord, le joueur de 26 ans est en possession d’une entente avec les Zurich Lions en cas de retour en Suisse. L’an dernier, il était le meilleur compteur de l’équipe nationale avec 12 points en 8 matches.
 					</p>
 					<!-- <p class="text-white text-xs opacity-70">Legende de la photo/crédit</p> -->
 				</div>
@@ -199,22 +195,31 @@
 
 			<section class="section6 container py-8 max-w-6xl overflow-auto relative">
 				<div class="textbox w-full md:w-1/2 p-0 md:p-4">
-					<p class="font-bold md:text-left text-2xl md:text-5xl text-white">Niels Hintermann</p>
-					<div class="grid grid-cols-1 py-4">
-						<span class="block text-white opacity-70 font-bold underline underline-offset-1 mb-2">Chance de médaille</span>
-						<span class="text-white block overflow-auto">
-							<span class="float-left mr-2 opacity-70">Descente le 12 février</span>
-							<img src="img/star3.svg" alt="Icône 5 étoiles" class="translate-y-1.5">
+					<p class="font-bold md:text-left text-2xl md:text-5xl text-white mb-4">Janis Moser</p>
+					<div class="grid grid-cols-1 px-2 py-4">
+						<span class="">
+							<img src="img/this/logo-arizona-coyotes.svg" alt="logo Los Angeles Kings" class="h-24 float-left mr-4">
+							<span class="text-white opacity-70 text-md leading-0.5 block">Défenseur des Arizona Coyotes comptabilisant 125 matches de NHL. Drafté en 2021 par les Arizona Coyotes (2e tour, 60e position)</span>
 						</span>
 					</div>
-					<p class="text-white text-l md:text-xl mb-4">L’équipe de Suisse est orpheline de Beat Feuz. Son successeur pourrait s’appeler Niels Hintermann. À&nbsp;27&nbsp;ans, le descendeur a fêté un podium prestigieux (3e) à Kitzbühel (Aut). Un résultat relégué au second plan par le week-end d’adieu de «Kugelblitz».
+					<div class="grid grid-cols-1 px-2 py-4 mb-4">
+						<span class="block text-white opacity-70 font-bold underline underline-offset-1 mb-2">Statistiques de la saison 2022/2023</span>
+						<div class="flex text-white opacity-70">
+							<span class="w-1/4 text-center font-thin"><span class="sport text-4xl">82</span><br>matches</span>
+							<span class="w-1/4 text-center font-thin"><span class="sport text-4xl">7</span><br>buts</span>
+							<span class="w-1/4 text-center font-thin"><span class="sport text-4xl">24</span><br>assists</span>
+							<span class="w-1/4 text-center font-thin"><span class="sport text-4xl">31</span><br>points</span>
+						</div>
+					</div>
+					<p class="text-white text-l md:text-xl mb-4">L’arrière seelandais en est déjà à son quatrième tournoi mondial alors qu’il n’a que 22 ans. Sa première participation? À la surprise générale, il avait été sélectionné pour le Championnat du monde 2019 en Slovaquie alors qu’il n’avait que 19 ans.<br><br>
+						Depuis, Janis Moser a suivi une progression ultra-rapide puisqu’il vient de terminer sa deuxième saison de NHL où il est devenu l’un des arrières les plus sollicités des Coyotes de l’Arizona. Théoriquement, il est toujours sous contrat avec le HC Bienne pour la saison prochaine. Mais son explosion au plus haut niveau risque de ne pas lui permettre d’honorer cette entente. Il a encore un bail d’un an avec son équipe de NHL.
 					</p>
 					<!-- <p class="text-white text-xs opacity-70">Legende de la photo/crédit</p> -->
 				</div>
 				<div id="trigger6" class="trigger absolute top-8 w-full h-1"></div>
 			</section> 
 
-			<section class="section7 container py-8 max-w-6xl overflow-auto relative">
+			{# <section class="section7 container py-8 max-w-6xl overflow-auto relative">
 				<div class="textbox w-full md:w-1/2 p-0 md:p-4">
 					<p class="font-bold md:text-left text-2xl md:text-5xl text-white">Daniel Yule</p>
 					<div class="grid grid-cols-1 py-4">
@@ -263,9 +268,9 @@
 					<!-- <p class="text-white text-xs opacity-70">Legende de la photo/crédit</p> -->
 				</div>
 				<div id="trigger8" class="trigger absolute top-8 w-full h-1"></div>
-			</section> 
+			</section>  #}
 
-			<section class="section9 container py-8 max-w-6xl overflow-auto relative">
+			{# <section class="section9 container py-8 max-w-6xl overflow-auto relative">
 				<div class="textbox w-full md:w-1/2 p-0 md:p-4">
 					<p class="font-bold md:text-left text-2xl md:text-5xl text-white">Les quatre mousquetaires</p>
 					<div class="grid grid-cols-1 py-4">
@@ -281,7 +286,7 @@
 					<!-- <p class="text-white text-xs opacity-70">Legende de la photo/crédit</p> -->
 				</div>
 				<div id="trigger9" class="trigger absolute top-8 w-full h-1"></div>
-			</section> 
+			</section>  #}
 
 			<section class="section10 container py-8 max-w-6xl overflow-auto relative">
 				<div class="textbox w-80 absolute top-1/2 left-1/2 -translate-x-2/4 -translate-y-2/4">
